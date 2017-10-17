@@ -1,0 +1,153 @@
+﻿
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Force</title>
+    <style>
+        .nodetext {
+            font-size: 12px;
+            font-family: SimSun;
+            fill: #000000;
+        }
+
+        .linetext {
+            font-size: 12px;
+            font-family: SimSun;
+            fill: #0000FF;
+            fill-opacity: 0.0;
+        }
+    </style>
+</head>
+
+
+<body>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script>
+
+        var width = document.body.clientWidth - 50;
+        var height = document.body.clientHeight - 50;
+		var img_w = 120;
+		var img_h = 120;
+
+        var svg = d3.select("body")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+
+        d3.json("relation01.json",
+            function(error, root) {
+
+                if (error) {
+                    return console.log(error);
+                }
+                console.log(root);
+
+                // 200->500，-1500->-3750
+                var force = window.d3.layout.force()
+                    .nodes(root.nodes)
+                    .links(root.edges)
+                    .size([width, height])
+                    .linkDistance(500)
+                    .charge(-3750)
+                    .start();
+
+                var edgesLine = svg.selectAll("line")
+                    .data(root.edges)
+                    .enter()
+                    .append("line")
+                    .style("stroke", "#ccc")
+                    .style("stroke-width", 1);
+
+                var edgesText = svg.selectAll(".linetext")
+                    .data(root.edges)
+                    .enter()
+                    .append("text")
+                    .attr("class", "linetext")
+                    .text(function(d) {
+                        return d.relation;
+                    });
+
+
+                var nodesImg = svg.selectAll("image")
+                    .data(root.nodes)
+                    .enter()
+                    .append("image")
+                    .attr("width", img_w)
+                    .attr("height", img_h)
+                    .attr("xlink:href",
+                        function(d) {
+                            return d.image;
+                        })
+                    .on("mouseover",
+                        function(d, i) {
+                            //显示连接线上的文字
+                            edgesText.style("fill-opacity",
+                                function(edge) {
+                                    if (edge.source === d || edge.target === d) {
+                                        return 1.0;
+                                    }
+                                });
+                        })
+                    .on("mouseout",
+                        function(d, i) {
+                            //隐去连接线上的文字
+                            edgesText.style("fill-opacity",
+                                function(edge) {
+                                    if (edge.source === d || edge.target === d) {
+                                        return 0.0;
+                                    }
+                                });
+                        })
+                    .call(force.drag);
+
+                var textDx = -20;
+                var textDy = 20;
+
+                var nodesText = svg.selectAll(".nodetext")
+                    .data(root.nodes)
+                    .enter()
+                    .append("text")
+                    .attr("class", "nodetext")
+                    .attr("dx", textDx)
+                    .attr("dy", textDy)
+                    .text(function(d) {
+                        return d.name;
+                    });
+
+
+                force.on("tick",
+                    function() {
+
+                        //限制结点的边界
+                        root.nodes.forEach(function(d, i) {
+                            d.x = d.x - img_w / 2 < 0 ? img_w / 2 : d.x;
+                            d.x = d.x + img_w / 2 > width ? width - img_w / 2 : d.x;
+                            d.y = d.y - img_h / 2 < 0 ? img_h / 2 : d.y;
+                            d.y = d.y + img_h / 2 + textDy > height ? height - img_h / 2 - textDy : d.y;
+                        });
+
+                        //更新连接线的位置
+                        edgesLine.attr("x1", function(d) { return d.source.x; });
+                        edgesLine.attr("y1", function(d) { return d.source.y; });
+                        edgesLine.attr("x2", function(d) { return d.target.x; });
+                        edgesLine.attr("y2", function(d) { return d.target.y; });
+
+                        //更新连接线上文字的位置
+                        edgesText.attr("x", function(d) { return (d.source.x + d.target.x) / 2; });
+                        edgesText.attr("y", function(d) { return (d.source.y + d.target.y) / 2; });
+
+
+                        //更新结点图片和文字
+                        nodesImg.attr("x", function(d) { return d.x - img_w / 2; });
+                        nodesImg.attr("y", function(d) { return d.y - img_h / 2; });
+
+                        nodesText.attr("x", function(d) { return d.x });
+                        nodesText.attr("y", function(d) { return d.y + img_w / 2; });
+                    });
+            });
+
+    </script>
+
+</body>
+</html>
