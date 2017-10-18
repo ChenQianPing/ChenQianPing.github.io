@@ -2,198 +2,131 @@
   "nodes": [
     {
       "name": "关羽",
-      "image": "0002_关羽_1.jpg",
-      "sn": 0 
+      "image": "0002_关羽_1.jpg"
     },
     {
       "name": "马超",
-      "image": "0004_马超_1.jpg",
-      "sn": 1
+      "image": "0004_马超_1.jpg"
     },
     {
       "name": "黄忠",
-      "image": "1023_黄忠_1.jpg",
-      "sn": 2
+      "image": "1023_黄忠_1.jpg"
     },
     {
       "name": "夏侯渊",
-      "image": "0006_夏侯渊_1.jpg",
-      "sn": 3
+      "image": "0006_夏侯渊_1.jpg"
     },
     {
       "name": "孙权",
-      "image": "1064_孙权_1.jpg",
-      "sn": 4
+      "image": "1064_孙权_1.jpg"
     },
     {
       "name": "刘封",
-      "image": "0194_刘封_1.jpg",
-      "sn": 5
+      "image": "0194_刘封_1.jpg"
     },
     {
       "name": "孟达",
-      "image": "0115_孟达_1.jpg",
-      "sn": 6
+      "image": "0115_孟达_1.jpg"
     },
     {
       "name": "法正",
-      "image": "0113_法正_1.jpg",
-      "sn": 7
+      "image": "0113_法正_1.jpg"
     },
     {
       "name": "曹丕",
-      "image": "0061_曹丕_1.jpg",
-      "sn": 8
+      "image": "0061_曹丕_1.jpg"
     },
     {
       "name": "桓阶",
-      "image": "0693_桓阶_1.jpg",
-      "sn": 9
+      "image": "0693_桓阶_1.jpg"
     },
     {
       "name": "夏侯尚",
-      "image": "0207_夏侯尚_1.jpg",
-      "sn": 10
+      "image": "0207_夏侯尚_1.jpg"
     },
     {
       "name": "司马懿",
-      "image": "0049_司马懿_1.jpg",
-      "sn": 11
+      "image": "0049_司马懿_1.jpg"
     },
     {
       "name": "于禁",
-      "image": "0076_于禁_1.jpg",
-      "sn": 12
+      "image": "0076_于禁_1.jpg"
     },
     {
       "name": "庞德",
-      "image": "0028_庞德_1.jpg",
-      "sn": 13
+      "image": "0028_庞德_1.jpg"
     },
     {
       "name": "颜良",
-      "image": "0010_颜良_1.jpg",
-      "sn": 14
+      "image": "0010_颜良_1.jpg"
     },
     {
       "name": "张辽",
-      "image": "0014_张辽_1.jpg",
-      "sn": 15
+      "image": "0014_张辽_1.jpg"
     },
     {
       "name": "费诗",
-      "image": "0719_费诗_1.jpg",
-      "sn": 16
+      "image": "0719_费诗_1.jpg"
     },
     {
       "name": "糜芳",
-      "image": "0163_糜芳_1.jpg",
-      "sn": 17
+      "image": "0163_糜芳_1.jpg"
     },
     {
       "name": "傅士仁",
-      "image": "0429_傅士仁_1.jpg",
-      "sn": 18
+      "image": "0429_傅士仁_1.jpg"
     },
     {
       "name": "潘璋",
-      "image": "0224_潘璋_1.jpg",
-      "sn": 19
+      "image": "0224_潘璋_1.jpg"
     },
     {
       "name": "马忠",
-      "image": "0479_马忠_1.jpg",
-      "sn": 20
+      "image": "0479_马忠_1.jpg"
     },
     {
       "name": "糜竺",
-      "image": "0162_糜竺_1.jpg",
-      "sn": 21
+      "image": "0162_糜竺_1.jpg"
     },
     {
       "name": "麋夫人",
-      "image": "0769_糜氏_1.jpg",
-      "sn": 22
+      "image": "0769_糜氏_1.jpg"
     },
     {
       "name": "刘备",
-      "image": "0036_刘备_1.jpg",
-      "sn": 23
+      "image": "0036_刘备_1.jpg"
     },
     {
       "name": "陶谦",
-      "image": "0067_陶谦_1.jpg",
-      "sn": 24
+      "image": "0067_陶谦_1.jpg"
     },
     {
       "name": "虞翻",
-      "image": "0178_虞翻_1.jpg",
-      "sn": 25
+      "image": "0178_虞翻_1.jpg"
     },
     {
       "name": "贺齐",
-      "image": "0506_贺齐_1.jpg",
-      "sn": 26
+      "image": "0506_贺齐_1.jpg"
     },
     {
       "name": "夏侯霸",
-      "image": "0080_夏侯霸_1.jpg",
-      "sn": 27
+      "image": "0080_夏侯霸_1.jpg"
     },
     {
       "name": "郭淮",
-      "image": "0206_郭淮_1.jpg",
-      "sn": 28
+      "image": "0206_郭淮_1.jpg"
     },
     {
       "name": "曹爽",
-      "image": "0099_曹爽_1.jpg",
-      "sn": 29
+      "image": "0099_曹爽_1.jpg"
     },
     {
       "name": "曹叡",
-      "image": "0059_曹叡_1.jpg",
-      "sn": 30
+      "image": "0059_曹叡_1.jpg"
     },
     {
       "name": "曹真",
-      "image": "0098_曹真_1.jpg",
-      "sn": 31
-    },
-    {
-      "name": "夏侯玄",
-      "image": "0247_夏侯玄_1.jpg",
-      "sn": 32
-    },
-    {
-      "name": "刘璋",
-      "image": "0071_刘璋_1.jpg",
-      "sn": 33
-    },
-    {
-      "name": "张松",
-      "image": "0050_张松_1.jpg",
-      "sn": 34
-    },
-    {
-      "name": "陈群",
-      "image": "0105_陈群_1.jpg",
-      "sn": 35
-    },
-    {
-      "name": "荀彧",
-      "image": "1044_荀彧_1.jpg",
-      "sn": 36
-    },
-    {
-      "name": "陈泰",
-      "image": "0199_陈泰_1.jpg",
-      "sn": 37
-    },
-    {
-      "name": "吴质",
-      "image": "0335_吴质_1.jpg",
-      "sn": 38
+      "image": "0098_曹真_1.jpg"
     }
   ],
   "edges": [
@@ -235,7 +168,7 @@
     {
       "source": 6,
       "target": 8,
-      "relation": "重用"
+      "relation": "受到重用"
     },
     {
       "source": 6,
@@ -366,71 +299,6 @@
       "source": 29,
       "target": 31,
       "relation": "父亲"
-    },
-    {
-      "source": 10,
-      "target": 32,
-      "relation": "子"
-    },
-    {
-      "source": 10,
-      "target": 3,
-      "relation": "叔伯"
-    },
-    {
-      "source": 10,
-      "target": 8,
-      "relation": "关系亲密"
-    },
-    {
-      "source": 7,
-      "target": 33,
-      "relation": "怀才不遇"
-    },
-    {
-      "source": 7,
-      "target": 34,
-      "relation": "好友"
-    },
-    {
-      "source": 7,
-      "target": 23,
-      "relation": "肱股"
-    },
-    {
-      "source": 0,
-      "target": 23,
-      "relation": "义兄"
-    },
-    {
-      "source": 8,
-      "target": 9,
-      "relation": "寄命之臣"
-    },
-    {
-      "source": 8,
-      "target": 35,
-      "relation": "心腹"
-    },
-    {
-      "source": 35,
-      "target": 36,
-      "relation": "岳父"
-    },
-    {
-      "source": 35,
-      "target": 37,
-      "relation": "子辈"
-    },
-    {
-      "source": 8,
-      "target": 38,
-      "relation": "心腹"
-    },
-    {
-      "source": 8,
-      "target": 11,
-      "relation": "心腹"
     }
   ]
 }
