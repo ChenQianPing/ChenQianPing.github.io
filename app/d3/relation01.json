@@ -200,7 +200,7 @@
     {
       "source": 0,
       "target": 1,
-      "relation": "一较高低"
+      "relation": "较高低"
     },
     {
       "source": 0,
@@ -250,7 +250,7 @@
     {
       "source": 6,
       "target": 11,
-      "relation": "被斩杀"
+      "relation": "斩杀"
     },
     {
       "source": 0,
@@ -290,7 +290,7 @@
     {
       "source": 0,
       "target": 17,
-      "relation": "守卫江陵"
+      "relation": "守江陵"
     },
     {
       "source": 0,
@@ -330,7 +330,7 @@
     {
       "source": 17,
       "target": 25,
-      "relation": "遭致鄙视"
+      "relation": "鄙视"
     },
     {
       "source": 17,
