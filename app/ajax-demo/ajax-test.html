@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <script src="jquery-1.10.2.min.js"></script>
+    
+    <script type="text/javascript">
+        $.ajax({
+            url: "http://localhost:3001/api/Act/CheckUser",
+            type: "get",
+            dataType: "json",
+            //data: {},
+            async: false,
+            headers: { "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoic3RyaW5nIiwiZXhwIjoxNTMwNjk0MDQ2LCJpc3MiOiJ5b3VyZG9tYWluLmNvbSIsImF1ZCI6InlvdXJkb21haW4uY29tIn0.zPRzFWX3gcsR5dN4C57ah9LonfBQaCXQMTPMios9w0o" },
+            success: function (d) {
+                alert(JSON.stringify(d));
+            },
+            error: function (d) {
+                alert(JSON.stringify(d));
+            }
+        });
+    </script>
+
+</body>
+</html>
+
+
